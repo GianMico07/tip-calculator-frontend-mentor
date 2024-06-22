@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <section class="tip-calulator-section">
+      <div class="container">
+        <div class="name">
+          <div class="container">
+            <h2>SPLI<br />TTER</h2>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="tip-calculator">
+            <div class="tip-calculator-inputs">
+              <div>
+                <p>Bill</p>
+
+                <div class="money-input">
+                  <img src="./images/icon-dollar.svg" alt="" />
+                  <input
+                    type="number"
+                    placeholder="000.00"
+                    class="bill"
+                    id="bill"
+                    min="0"
+                  />
+                </div>
+              </div>
+
+              <div class="select-tip-container">
+                <p>Select Tip %</p>
+                <div class="tips">
+                  <div class="radio-button-label">
+                    <input
+                      type="radio"
+                      class="percentage"
+                      name="percentage"
+                      id="percentage5"
+                      value="0.5"
+                    />
+                    <label for="percentage5">5%</label>
+                  </div>
+
+                  <div class="radio-button-label">
+                    <input
+                      type="radio"
+                      class="percentage"
+                      name="percentage"
+                      id="percentage10"
+                      value="0.10"
+                    />
+                    <label for="percentage10">10%</label>
+                  </div>
+
+                  <div class="radio-button-label">
+                    <input
+                      type="radio"
+                      class="percentage"
+                      name="percentage"
+                      id="percentage15"
+                      value="0.15"
+                    />
+                    <label for="percentage15">15%</label>
+                  </div>
+
+                  <div class="radio-button-label">
+                    <input
+                      type="radio"
+                      class="percentage"
+                      name="percentage"
+                      id="percentage25"
+                      value="0.25"
+                    />
+                    <label for="percentage25">25%</label>
+                  </div>
+
+                  <div class="radio-button-label">
+                    <input
+                      type="radio"
+                      class="percentage"
+                      name="percentage"
+                      id="percentage50"
+                      value="0.50"
+                    />
+                    <label for="percentage50">50%</label>
+                  </div>
+
+                  <div class="custom-label">
+                    <input
+                      type="number"
+                      placeholder="Custom"
+                      class="custom"
+                      id="percentInput"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d--flex justify--between">
+                  <p>Number of People</p>
+                  <p id="zeroError">Can't be zero</p>
+                </div>
+                <div class="no-of-people-input" id="no-of-people-input">
+                  <img src="./images/icon-person.svg" alt="" />
+                  <input
+                    type="number"
+                    placeholder="0"
+                    class="people"
+                    id="people"
+                    min="0"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="tip-calculator-results">
+              <div class="tip-calculator-results-wrapper">
+                <div class="tip-amount-section">
+                  <div class="tip-amount">
+                    <p>Tip Amount</p>
+                    <p class="per-person">/ person</p>
+                  </div>
+
+                  <div class="number">
+                    <p>$<span id="tip-amount">0.00</span></p>
+                  </div>
+                </div>
+
+                <div class="total-section">
+                  <div class="total">
+                    <p>Total</p>
+                    <p class="per-person">/ person</p>
+                  </div>
+
+                  <div class="number">
+                    <p>$<span id="total">0.00</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="result-button-container">
+                <button class="btn-reset" id="reset">RESET</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+  <script src="./script.js"></script>
+</html>

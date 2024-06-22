@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 30%;
+    background-color: hsl(185, 41%, 84%);
+}
+
+body{
+    font-family: $ff-primary;
+    overflow-x: hidden;
+}
+
+ul,li{
+    text-decoration: none;
+}
+
+h3{
+    font-size: 24px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+        }
+

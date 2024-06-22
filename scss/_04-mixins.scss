@@ -1,0 +1,24 @@
+@mixin centerAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin mediaQuery($width:48rem){
+    @media screen and (max-width: $width){
+        @content;
+    }
+}
+
+
+@mixin grid($cols: 1, $gap: 1rem){
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-gap: $gap;
+}
